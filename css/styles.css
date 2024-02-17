@@ -1,0 +1,263 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  margin: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+h1 {
+  margin-top: 0;
+}
+h2,
+h3,
+p {
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.container-page-heder,
+.page-header-nav,
+.page-heder-list,
+.page-header-address-list {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.logo-heder-span {
+  color: #2e2f42;
+}
+.logo-header {
+  margin-right: 76px;
+  padding: 24px 0;
+  display: block;
+}
+.page-heder-list,
+.page-header-address-list {
+  gap: 40px;
+}
+.page-header-list-link {
+  display: block;
+  padding: 24px 0;
+}
+.page-header-address {
+  margin-left: auto;
+}
+.page-header-list-link {
+  font-weight: 500;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+.page-header-address {
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+  color: #2e2f42;
+}
+.page-header-list-link:hover,
+.page-header-list-link:focus,
+.page-header-address-link:hover,
+.page-header-address-link:focus {
+  color: #404bbf;
+}
+.page-main,
+.page-footer {
+  background-color: #2e2f42;
+}
+.page-main,
+.page-main-button {
+  color: #fff;
+}
+.page-main {
+  padding: 188px 0;
+}
+
+.page-main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+.page-main-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: #4d5ae5;
+  cursor: pointer;
+  display: block;
+  padding: 16px 32px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+}
+.page-main-button:hover,
+.page-main-button:focus {
+  background-color: #404bbf;
+}
+.benefits {
+  padding: 120px 0;
+}
+.benefits-list,
+.portfolio-list {
+  text-align: left;
+}
+.benefits-list-item-title,
+.team-list-item-title,
+.portfolio-list-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.benefits-list-item-text,
+.team-list-item-text,
+.portfolio-list-item-text,
+.page-footer-text {
+  font-weight: 400;
+  line-height: 1.5;
+}
+.team {
+  background: #f4f4fd;
+}
+.team-list-item {
+  background-color: #ffffff;
+}
+.team-title,
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  text-align: center;
+}
+.team-list-item-text,
+.team-list-item-title {
+  text-align: center;
+}
+.team-list-item-title,
+.portfolio-list-item-title {
+  margin-bottom: 8px;
+}
+.logo-footer-span,
+.page-footer-text {
+  color: #f4f4fd;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.benefits-list,
+.team-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.benefits-list-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+.benefits-list-item-title {
+  margin-bottom: 8px;
+}
+.team,
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.team-title,
+.portfolio-title {
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.team-list-item {
+  width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-list-item-container-text,
+.portfolio-list-item-container-text:last-child {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
+
+.container-text {
+  padding: 32px 0;
+}
+.page-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.page-footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.page-footer-text {
+  max-width: 264px;
+}
