@@ -27,6 +27,7 @@ h1 {
 }
 h2,
 h3,
+h4,
 p {
   color: #2e2f42;
   letter-spacing: 0.02em;
@@ -99,7 +100,35 @@ img {
 .page-header-address-link:focus {
   color: #404bbf;
 }
-.page-main,
+.page-header-list-link.activ {
+  position: relative;
+  color: #404bbf;
+}
+.page-header-list-link.activ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  background-color: #404bbf;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+}
+.page-main {
+  background-color: rgb(46, 47, 66, 0.7);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/heder-images/people-office.jpg);
+  background-size: auto;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .page-footer {
   background-color: #2e2f42;
 }
@@ -150,6 +179,17 @@ img {
 .portfolio-list {
   text-align: left;
 }
+.container-icon {
+  padding: 24px 100px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background-color: #f4f4fd;
+}
+.icon {
+  fill: #2e2f42;
+}
+
 .benefits-list-item-title,
 .team-list-item-title,
 .portfolio-list-item-title {
@@ -186,6 +226,26 @@ img {
 .team-list-item-title,
 .portfolio-list-item-title {
   margin-bottom: 8px;
+}
+.container-link-team {
+  display: flex;
+  gap: 24px;
+  padding: 8px 16px;
+}
+.link-team {
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.link-team:hover,
+.link-team:focus {
+  background-color: #404bbf;
+}
+.icon-link-team {
+  display: block;
+  fill: #f4f4fd;
+  margin: 12px;
 }
 .logo-footer-span,
 .page-footer-text {
@@ -246,7 +306,30 @@ img {
   border-top: none;
   padding: 32px 16px;
 }
+.portfolio-box {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-box-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
 
+  font-weight: 400;
+  line-height: 1.5;
+
+  padding: 40px 32px;
+}
+.portfolio-box:hover .portfolio-box-overlay,
+.portfolio-box:focus .portfolio-box-overlay {
+  transform: translateX(0);
+}
 .container-text {
   padding: 32px 0;
 }
@@ -254,10 +337,40 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.footer-conteiner {
+  display: flex;
+  gap: 120px;
+}
 .page-footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
 .page-footer-text {
   max-width: 264px;
+}
+.footer-title {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fff;
+}
+.container-link-footer {
+  display: flex;
+  gap: 16px;
+}
+.link-footer {
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.icon-link-footer {
+  display: block;
+  fill: #f4f4fd;
+  margin: 12px;
+}
+.link-footer:hover,
+.link-footer:focus {
+  background-color: #31d0aa;
 }
