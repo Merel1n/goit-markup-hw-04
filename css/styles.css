@@ -188,7 +188,6 @@ img {
   text-align: left;
 }
 .container-icon {
-  padding: 24px 100px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   margin-bottom: 8px;
@@ -234,8 +233,9 @@ img {
 .team-list-item-text,
 .team-list-item-title {
   text-align: center;
+  margin-bottom: 8px;
 }
-.team-list-item-title,
+
 .portfolio-list-item-title {
   margin-bottom: 8px;
 }
@@ -351,8 +351,8 @@ img {
 
   padding: 40px 32px;
 }
-.portfolio-box:hover .portfolio-box-overlay,
-.portfolio-box:focus .portfolio-box-overlay {
+.portfolio-list-item:hover .portfolio-box-overlay,
+.portfolio-list-itemx:focus .portfolio-box-overlay {
   transform: translateY(0);
 }
 .container-text {
